@@ -28,7 +28,7 @@ export class UserModel {
   }
 
 
-  get lastnanme(): string {
+  get lastname(): string {
     return this._useModel.lastname;
   }
 

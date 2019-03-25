@@ -3,6 +3,7 @@ import { UserValidationSchema } from './UserValidationSchema';
 import { forEach, pick} from 'lodash';
 
 async function validateUserRegistration(userReqObj:any): Promise<any>{
+        console.info('validateUserRegistration 000 === ', userReqObj)
        let validUserRegData = new UserValidationSchema(userReqObj);
        var regex = new RegExp('^[A-Za-z0-9$]+$');
        let validationResults =  await validate(validUserRegData);
